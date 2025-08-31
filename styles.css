@@ -29,9 +29,11 @@
 
 /* || Main Styling */
 
+/* Header */
+
 header {
   background-image: url(images/mobile/image-header.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 35em;
   padding: 1.7rem;
@@ -59,4 +61,54 @@ h1 {
   line-height: 150%;
   text-align: center;
   margin-bottom: 3.5rem;
+}
+
+/* Image Section 1 */
+
+.img-transform {
+  height: auto;
+  width: 24em;
+}
+
+.image-section-1-txt {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.section-header {
+  color: var(--Grey-950);
+  font-family: var(--Header);
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+}
+.section-txt {
+  color: var(--Grey-550);
+  font-family: var(--Paragraph);
+  line-height: 150%;
+  margin-bottom: 1.3rem;
+}
+
+.section-link {
+  color: var(--Grey-950);
+  font-family: var(--Header);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.learn-more {
+  position: relative;
+}
+
+.learn-more-colour {
+  background-color: var(--Yellow-500);
+  border-radius: 4rem;
+  height: 0.6rem;
+  opacity: 0.3;
+  position: absolute;
+  left: 7rem;
+  top: 0.8rem;
+  width: 30%;
+  z-index: -1;
 }
