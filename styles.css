@@ -1,0 +1,62 @@
+/* || Global Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  /* Colours */
+
+  --Red-400: hsl(7, 99%, 70%);
+  --Yellow-500: hsl(51, 100%, 49%);
+  --Green-800: hsl(167, 40%, 24%);
+  --Blue-800: hsl(198, 62%, 26%);
+
+  --Grey-950: hsl(212, 27%, 19%);
+  --Grey-600: hsl(213, 9%, 39%);
+  --Grey-550: hsl(232, 10%, 55%);
+  --Grey-400: hsl(210, 4%, 67%);
+  --White: hsl(0, 100%, 100%);
+
+  /* Fonts */
+
+  --Header: "Fraunces", sans-serif, serif;
+  --Paragraph: "Barlow", sans-serif, serif;
+}
+
+/* || Main Styling */
+
+header {
+  background-image: url(images/mobile/image-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 35em;
+  padding: 1.7rem;
+  width: 100%;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.header-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--White);
+  font-family: var(--Header);
+  font-size: 2.3rem;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
