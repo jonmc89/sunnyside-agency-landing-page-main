@@ -198,8 +198,6 @@ h1 {
   text-align: center;
 }
 
-/* TODO: Add JS for Hover effects */
-
 .learn-more {
   position: relative;
 }
@@ -214,7 +212,13 @@ h1 {
   top: 0.8rem;
   width: 30%;
   z-index: -1;
+  transition: opacity 0.2s ease;
 }
+
+.learn-more .section-link:hover + .learn-more-colour-1 {
+  opacity: 0.5;
+}
+
 .learn-more-colour-2 {
   background-color: var(--Red-400);
   border-radius: 4rem;
@@ -225,6 +229,11 @@ h1 {
   top: 0.8rem;
   width: 30%;
   z-index: -1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.learn-more .section-link:hover + .learn-more-colour-2 {
+  opacity: 0.5;
 }
 
 .image-section-3 {
@@ -263,7 +272,11 @@ h1 {
   color: var(--Blue-800);
 }
 
-.graphic-text {
+.graphic {
+  color: black;
+}
+
+.photography-text {
   color: var(--Blue-800);
 }
 /* Testimonials Section */
@@ -358,6 +371,16 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: var(--Green-600);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-nav-link:hover {
+  color: var(--Green-800);
+}
+
+.footer-nav-link:active {
+  opacity: 0.7;
 }
 
 .socials-container {
@@ -368,4 +391,14 @@ footer {
 .fa-brands {
   color: var(--Green-600);
   font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: var(--Green-800);
+}
+
+.fa-brands:active {
+  opacity: 0.7s;
 }
