@@ -13,6 +13,8 @@
   --Red-400: hsl(7, 99%, 70%);
   --Yellow-500: hsl(51, 100%, 49%);
   --Green-800: hsl(167, 40%, 24%);
+  --Green-600: #3e7468;
+  --Green-300: hsl(168, 44%, 70%);
   --Blue-800: hsl(198, 62%, 26%);
 
   --Grey-950: hsl(212, 27%, 19%);
@@ -231,4 +233,44 @@ h1 {
 .grid-image {
   height: 12em;
   width: auto;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: var(--Green-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+  filter: invert(56%) sepia(55%) saturate(314%) hue-rotate(116deg)
+    brightness(90%) contrast(86%);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-nav-link {
+  font-family: var(--Paragraph);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--Green-600);
+}
+
+.socials-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.fa-brands {
+  color: var(--Green-600);
+  font-size: 1.5rem;
 }
