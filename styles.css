@@ -219,3 +219,16 @@ h1 {
   color: var(--Grey-600);
   font-family: var(--Paragraph);
 }
+
+/* Image Grid Section */
+
+.image-grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-image {
+  height: 12em;
+  width: auto;
+}
