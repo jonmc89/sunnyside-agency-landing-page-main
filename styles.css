@@ -169,3 +169,53 @@ h1 {
 .graphic-text {
   color: var(--Blue-800);
 }
+/* Testimonials Section */
+
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.testimonials-header {
+  font-size: 1.5rem;
+  font-family: var(--Header);
+  color: var(--Grey-400);
+  margin-bottom: 3rem;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.testimonials-img {
+  border-radius: 50%;
+  height: 5em;
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+.testimonials-quote {
+  color: var(--Grey-600);
+  text-align: center;
+  width: 16em;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+  font-family: var(--Paragraph);
+}
+
+.testimonials-name {
+  font-weight: bold;
+  font-family: var(--Header);
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-title {
+  color: var(--Grey-600);
+  font-family: var(--Paragraph);
+}
