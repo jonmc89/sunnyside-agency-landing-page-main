@@ -16,7 +16,7 @@
   --Green-600: #3e7468;
   --Green-300: hsl(168, 44%, 70%);
   --Blue-800: hsl(198, 62%, 26%);
-
+  --Black: #000;
   --Grey-950: hsl(212, 27%, 19%);
   --Grey-600: hsl(213, 9%, 39%);
   --Grey-550: hsl(232, 10%, 55%);
@@ -134,6 +134,7 @@
   border-radius: 4rem;
   border: none;
   opacity: 0.7;
+  color: var(--Black);
   background-color: var(--Yellow-500);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }

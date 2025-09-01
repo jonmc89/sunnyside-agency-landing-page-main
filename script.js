@@ -12,3 +12,9 @@ menuIcon.addEventListener("click", () => {
     mobileNav.classList.add("mobile-nav-unhide");
   }
 });
+
+window.addEventListener("scroll", () => {
+  if (mobileNav.classList.contains("mobile-nav-unhide")) {
+    mobileNav.classList.remove("mobile-nav-unhide");
+  }
+});
