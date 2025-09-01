@@ -55,6 +55,97 @@
   cursor: pointer;
 }
 
+/* Hidden Nav */
+
+.mobile-nav {
+  position: absolute;
+  top: 5rem;
+  left: 3.5rem;
+  width: calc(100% - 3.5rem);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-nav-unhide {
+  position: absolute;
+  top: 5rem;
+  width: calc(100% - 3.5rem);
+  left: 3.5rem;
+  opacity: 1;
+  z-index: 2;
+}
+
+.point {
+  position: absolute;
+  top: -1rem;
+  left: 15.48rem;
+  background-color: var(--White);
+  height: 0;
+  width: 0;
+  border-left: 1rem solid var(--White);
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  background: none;
+  transform: rotate(45deg);
+}
+
+.hidden-Nav {
+  background-color: var(--White);
+  height: auto;
+  width: 80%;
+  padding: 2.5rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hidden-nav-link {
+  color: var(--Grey-550);
+  font-family: var(--Paragraph);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.hidden-nav-link:hover {
+  color: var(--Yellow-500);
+}
+
+.hidden-nav-link:active {
+  opacity: 0.7;
+}
+
+.contact-btn {
+  font-family: var(--Header);
+  font-weight: bold;
+  padding: 0.8rem 3rem;
+  border-radius: 4rem;
+  border: none;
+  opacity: 0.7;
+  background-color: var(--Yellow-500);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+  opacity: 1;
+}
+
+.contact-btn:active {
+  opacity: 0.7;
+}
+
 /* Header */
 
 /* TODO: Add mobile nav menu and JS */
@@ -89,6 +180,10 @@ h1 {
   line-height: 150%;
   text-align: center;
   margin-bottom: 3.5rem;
+}
+
+.hamburger-icon {
+  cursor: pointer;
 }
 
 /* Image Section 1 */

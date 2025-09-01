@@ -16,11 +16,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-        <script src="https://kit.fontawesome.com/d4691f768e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d4691f768e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
+    <!--Mobile Nav-->
+    <div id="mobileNav" class="mobile-nav">
+      <div class="point"></div>
+      <div class="hidden-Nav">
+        <nav class="hidden-nav-list">
+          <a class="hidden-nav-link" href="#">About</a>
+          <a class="hidden-nav-link" href="#">Services</a>
+          <a class="hidden-nav-link" href="#">Projects</a>
+          <button class="contact-btn" type="button">Contact</button>
+        </nav>
+      </div>
+    </div>
+    <!--End-->
     <header>
       <nav>
         <img
@@ -28,6 +44,8 @@
           alt="Sunnyside agency logo in white stylized text on a transparent background, conveying a modern and friendly tone"
         />
         <img
+          id="menuIcon"
+          class="hamburger-icon"
           src="./images/icon-hamburger.svg"
           alt="Three horizontal white lines stacked vertically representing a menu icon, set against a transparent background, conveying a simple and modern interface element"
         />
@@ -120,24 +138,44 @@
         <p class="testimonials-name">Thomas S.</p>
         <p class="testimonials-title">Chief Operating Officer</p>
       </div>
-      </div>
       <div class="testimonials-container">
         <img class="testimonials-img" src="./images/image-jennie.jpg" alt="" />
         <p class="testimonials-quote">
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
         </p>
         <p class="testimonials-name">Jennie F.</p>
         <p class="testimonials-title">Business Owner</p>
       </div>
     </section>
     <section class="image-grid-section">
-      <img class="grid-image milk" src="./images/mobile/image-gallery-milkbottles.jpg" alt="Row of white plastic milk bottles with red caps standing upright against a bright blue background, with fluffy white clouds hanging above, creating a playful and cheerful atmosphere">
-      <img class="grid-image orange" src="./images/mobile/image-gallery-orange.jpg" alt="Half an orange with vibrant segments facing up, placed in the center of a white plate with a turquoise rim, set against a bright orange background, creating a fresh and cheerful mood">
-      <img class="grid-image cone" src="./images/mobile/image-gallery-cone.jpg" alt="Empty waffle ice cream cone standing upright against a bright blue background, creating a playful and inviting mood">
-      <img class="grid-image sugar" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Stacked white sugar cubes arranged in uneven columns on a pink background, with some cubes scattered at the base, creating a playful and lighthearted atmosphere">
+      <img
+        class="grid-image milk"
+        src="./images/mobile/image-gallery-milkbottles.jpg"
+        alt="Row of white plastic milk bottles with red caps standing upright against a bright blue background, with fluffy white clouds hanging above, creating a playful and cheerful atmosphere"
+      />
+      <img
+        class="grid-image orange"
+        src="./images/mobile/image-gallery-orange.jpg"
+        alt="Half an orange with vibrant segments facing up, placed in the center of a white plate with a turquoise rim, set against a bright orange background, creating a fresh and cheerful mood"
+      />
+      <img
+        class="grid-image cone"
+        src="./images/mobile/image-gallery-cone.jpg"
+        alt="Empty waffle ice cream cone standing upright against a bright blue background, creating a playful and inviting mood"
+      />
+      <img
+        class="grid-image sugar"
+        src="./images/mobile/image-gallery-sugar-cubes.jpg"
+        alt="Stacked white sugar cubes arranged in uneven columns on a pink background, with some cubes scattered at the base, creating a playful and lighthearted atmosphere"
+      />
     </section>
     <footer>
-      <img class="footer-logo" src="./images/logo.svg" alt="Sunnyside agency logo in white stylized text on a transparent background, conveying a modern and friendly tone">
+      <img
+        class="footer-logo"
+        src="./images/logo.svg"
+        alt="Sunnyside agency logo in white stylized text on a transparent background, conveying a modern and friendly tone"
+      />
       <nav class="footer-nav">
         <a class="footer-nav-link" href="#">About</a>
         <a class="footer-nav-link" href="#">Services</a>
@@ -150,5 +188,6 @@
         <i class="fa-brands fa-pinterest"></i>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
