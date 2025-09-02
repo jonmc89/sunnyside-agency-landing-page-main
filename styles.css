@@ -55,13 +55,18 @@
   cursor: pointer;
 }
 
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* Hidden Nav */
 
 .mobile-nav {
   position: absolute;
   top: 5rem;
   left: 3.5rem;
-  width: calc(100% - 3.5rem);
+  width: calc(100% - 7rem);
   opacity: 0;
   z-index: 2;
   transition: opacity 0.2s ease;
@@ -70,7 +75,7 @@
 .mobile-nav-unhide {
   position: absolute;
   top: 5rem;
-  width: calc(100% - 3.5rem);
+  width: calc(100% - 7rem);
   left: 3.5rem;
   opacity: 1;
   z-index: 2;
@@ -147,6 +152,38 @@
   opacity: 0.7;
 }
 
+/* Dekstop Nav */
+
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.desktop-nav:last-child {
+  margin-right: 0;
+}
+
+.desktop-nav-link {
+  color: var(--White);
+  cursor: pointer;
+  font-family: var(--Paragraph);
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.desktop-nav-button {
+  background-color: var(--White);
+  border: 0.1rem solid var(--White);
+  border-radius: 4rem;
+  color: var(--Black);
+  cursor: pointer;
+  font-family: var(--Header);
+  font-weight: bold;
+  padding: 1rem 1.7rem;
+}
+
 /* Header */
 
 header {
@@ -163,6 +200,10 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .header-content {
@@ -427,6 +468,10 @@ footer {
   opacity: 0.7s;
 }
 
+/* || Media Queries */
+
+/* Tablet View */
+
 @media screen and (min-width: 51.25em) {
   header {
     background-image: url(./images/desktop/image-header.jpg);
@@ -443,6 +488,13 @@ footer {
   }
 
   .mobile-nav {
+    left: 7rem;
+    width: calc(100% - 7rem);
+  }
+
+  .mobile-nav-unhide {
+    position: absolute;
+    top: 5rem;
     left: 7rem;
     width: calc(100% - 7rem);
   }
@@ -549,5 +601,41 @@ footer {
   .footer-nav-link,
   .fa-brands {
     font-size: 1.5em;
+  }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 90em) {
+  header {
+    background-size: contain;
+    width: 100%;
+    height: 71em;
+  }
+
+  nav {
+    margin-bottom: 8rem;
+  }
+
+  .header-logo {
+    width: 12rem;
+    height: auto;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .arrow-img {
+    height: 8rem;
   }
 }
