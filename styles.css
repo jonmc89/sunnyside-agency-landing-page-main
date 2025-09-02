@@ -171,6 +171,15 @@ body {
   font-size: 1.2rem;
   margin-right: 2rem;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.desktop-nav-link:hover {
+  color: var(--Black);
+}
+
+.desktop-nav-link:active {
+  opacity: 0.7;
 }
 
 .desktop-nav-button {
@@ -182,6 +191,16 @@ body {
   font-family: var(--Header);
   font-weight: bold;
   padding: 1rem 1.7rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.desktop-nav-button:hover {
+  background-color: transparent;
+  color: var(--White);
+}
+
+.desktop-nav-button:active {
+  opacity: 0.7;
 }
 
 /* Header */
