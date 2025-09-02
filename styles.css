@@ -99,8 +99,10 @@ body {
 .hidden-Nav {
   background-color: var(--White);
   height: auto;
-  width: 80%;
+  width: 90%;
   padding: 2.5rem;
+  left: -60%;
+  transform: translateX(7%);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -511,6 +513,7 @@ footer {
   .mobile-nav {
     left: 7rem;
     width: calc(100% - 7rem);
+    transform: translateX(-10%);
   }
 
   .mobile-nav-unhide {
@@ -521,7 +524,7 @@ footer {
   }
 
   .point {
-    left: 37.51em;
+    left: 40.3em;
   }
 
   .hidden-Nav {
@@ -679,6 +682,10 @@ footer {
     grid-column: 2;
   }
 
+  .learn-more-colour-1 {
+    left: 17.3em;
+  }
+
   .image-section-1-txt {
     grid-column: 1;
     grid-row: 1;
@@ -694,6 +701,10 @@ footer {
   .standout {
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .learn-more-colour-2 {
+    left: 17.3em;
   }
 
   .image-section-2-txt {
